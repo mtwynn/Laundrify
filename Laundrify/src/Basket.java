@@ -1,25 +1,20 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.HashMap;
 
 public class Basket {
-	List<Article> basket;
+	private HashMap<String, Article> basket;
 	
 	Basket() {
-		basket = new ArrayList<Article>();
+		basket = new HashMap<String, Article>();
 	}
 	
 	void addArticle(Article a) {
-		basket.add(a);
+		basket.put(a.getId(), a);
 	}
 	
 	void wash(Wardrobe w) {
-		for (Iterator<Article> iterator = basket.iterator(); iterator.hasNext(); ) {
-			Article article = iterator.next();
-			
-			article.resetWear();
-			w.addArticle(article);
-			iterator.remove();
+		for (String key : basket.keySet()) {
+			basket.get(key).resetWear();
+			w.addArticle(basket.remove(key));
 		}
 	}
 	
@@ -27,12 +22,12 @@ public class Basket {
 		System.out.println("====YOUR CURRENT BASKET====");
 		System.out.println("===========================");
 		System.out.println();
-		for (Article article : basket) {
-			System.out.println(String.format("%s %s: Worn %d times.", article.color, article.type, article.wearCount));
-			//System.out.println(article.color + " " + article.type + ": " + " Worn " + article.wearCount + " times.");
+		for (String key : basket.keySet()) {
+			System.out.println(String.format("%s: %s %s %s - WORN %d TIME(S).", basket.get(key).getId(), basket.get(key).color, basket.get(key).brand, basket.get(key).type, basket.get(key).wearCount));
 		}
 		System.out.println();
 		System.out.println("++++++++END BASKET+++++++++");
+		System.out.println();
 		System.out.println();
 	}
 }

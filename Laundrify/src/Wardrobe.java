@@ -1,48 +1,43 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.HashMap;
 
 public class Wardrobe {
-	private List<Article> wardrobe;
+	private HashMap<String, Article> wardrobe;
+	private Outfit outfit;
 	
-	public Wardrobe() {
-		wardrobe = new ArrayList<Article>();
+	public Wardrobe(Outfit outfit) {
+		this.outfit = outfit;
+		wardrobe = new HashMap<String, Article>();
 	}
 	
 	public void addArticle(Article a) {
-		wardrobe.add(a);
+		wardrobe.put(a.getId(), a);
 	}
 	
 	public void print() {
 		System.out.println("===YOUR CURRENT WARDROBE===");
 		System.out.println("===========================");
 		System.out.println();
-		for (Article article : wardrobe) {
-			System.out.println(String.format("%s %s: Worn %d times.", article.color, article.type, article.wearCount));
-			//System.out.println(article.color + " " + article.type + ": " + " Worn " + article.wearCount + " times.");
+		for (String key : wardrobe.keySet()) {
+			System.out.println(String.format("%s: %s %s %s - WORN %d TIME(S).", wardrobe.get(key).getId(), wardrobe.get(key).color, wardrobe.get(key).brand, wardrobe.get(key).type, wardrobe.get(key).wearCount));
 		}
 		System.out.println();
 		System.out.println("+++++++END WARD ROBE+++++++");
 		System.out.println();
+		System.out.println();
 	}
 	
 	public void putLaundry(String id, Basket b) {
-		for (Iterator<Article> iterator = wardrobe.iterator(); iterator.hasNext(); ) {
-			Article article = iterator.next();
-			if (article.getId().equals(id)) {
-				b.addArticle(article);
-				iterator.remove();
-			}
-			
-		}
+		outfit.takeOff(wardrobe.get(id));
+		b.addArticle(wardrobe.remove(id));
 	}
 	
 	public void wearArticle(String id) {
-		for (Article article : wardrobe) {
-			if (article.getId().equals(id)) {
-				article.wear();
-			}
-		}
+		if (!wardrobe.get(id).currentlyWorn) {
+			wardrobe.get(id).wear();
+			outfit.wear(wardrobe.get(id));
+		}	
+		else
+			System.out.println(String.format("You're already wearing (a) %s", wardrobe.get(id).type));
 	}
 	
 }
