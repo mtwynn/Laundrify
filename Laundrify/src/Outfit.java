@@ -12,6 +12,8 @@ public class Outfit {
 		outfit.put("Socks", null);
 	}
 	
+	
+	// Wear an article
 	public void wear(Article a) {
 		if (outfit.get(a.type) == null) {
 			outfit.put(a.type, a);
@@ -20,10 +22,36 @@ public class Outfit {
 		}
 	}
 	
-	public void takeOff(Article a) {
-		outfit.put(a.type, null);
+	// Take off an article from this Outfit
+	public void takeOff(Article a) throws NoWearException {
+		if (outfit.get(a.type) == null || outfit.get(a.type).getId() != a.getId()) throw new NoWearException();
+		else {
+			a.takeOff();
+			outfit.put(a.type, null);
+		}
+		
 	}
 	
+	// Take off all articles from this Outfit
+	public void strip() {
+		for (String key : outfit.keySet()) {
+			if (outfit.get(key) != null) {
+				outfit.get(key).takeOff();
+				outfit.put(key, null);
+			}
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	// Prints this Outfit
 	public void print() {
 		System.out.println("====YOUR CURRENT OUTFIT====");
 		System.out.println("===========================");

@@ -19,19 +19,22 @@ public class Main {
 			basket.print();
 			outfit.print();
 			
-			System.out.println("Please select a command: ");
-			System.out.println("ADD:   Add to wardrobe");
-			System.out.println("LDY:   Add to laundry basket");
-			System.out.println("WEAR:  Wear an article");
-			System.out.println("WASH:  Wash all clothes");
-			System.out.println("FIT:   Make me a clothing combination!");
-			System.out.println("E: Exit");
-			String command = s.nextLine();
+			System.out.println("PLEASE TYPE A COMMAND: ");
+			System.out.println("ADD  :   Add to wardrobe");
+			System.out.println("LDY  :   Add to laundry basket");
+			System.out.println("WASH :   Wash all clothes");
+			System.out.println("WEAR :   Wear an article");
+			System.out.println("REM  :   Remove an article");
+			System.out.println("STRIP:   Take off all clothes");
+			System.out.println("FIT  :   Make me an outfit!");
+			System.out.println("E    :   Exit");
+			String command = s.nextLine().toLowerCase().trim();
 			
 			switch (command) {
-			case "ADD":
+			
+			case "add":
 				System.out.println("Adding to wardrobe...");
-				System.out.println("What kind of clothing is it? (T-Shirt, Jacket, or Jeans): ");
+				System.out.println("What kind of clothing is it? (T-Shirt, Jacket, Jeans, Underwear, or Socks): ");
 				String type = s.nextLine();
 				System.out.println("What brand is it? ");
 				String brand = s.nextLine();
@@ -39,27 +42,68 @@ public class Main {
 				String color = s.nextLine();
 				System.out.println("Give it a unique ID!: (ex. A1)");
 				String id = s.nextLine();
+				while (wardrobe.containsId(id)) {
+					System.out.println("You already have that ID in your wardrobe. Please try another ID.");
+					id = s.nextLine();
+				}
 				wardrobe.addArticle(new Article(null, type, brand, color, id, false, 0));
 				break;
-			case "LDY":
-				System.out.println("Adding to laundry basket");
-				System.out.println("What is the ID of the item you would like to throw in the laundry?: ");
-				String ldyId = s.nextLine();
-				wardrobe.putLaundry(ldyId, basket);
+				
+			case "ldy":
+				System.out.println("Adding to laundry basket...");
+				System.out.println("What are the IDs of the item you would like to throw in the laundry?: ");
+				String[] ldyId = s.nextLine().split(" ");
+				
+				try {
+					for (String temp : ldyId) {
+						System.out.println(temp + " d ");
+						wardrobe.putLaundry(temp, basket);
+					}
+					
+				} catch (NoClothesException e) {
+					e.print();
+				}
 				break;
-			case "WEAR":
-				System.out.println("Wearing article");
-				System.out.println("What is the ID of the article you want to wear?: ");
-				String wearId = s.nextLine();
-				wardrobe.wearArticle(wearId);
-				break;
-			case "WASH":
+				
+			case "wash":
 				System.out.println("Washing all clothes...");
 				basket.wash(wardrobe);
 				break;
-			case "FIT":
+				
+			case "wear":
+				System.out.println("Wearing article...");
+				System.out.println("What are the IDs of the articles you want to wear?: ");
+				String[] wearId = s.nextLine().split(" ");
+				try {
+					for (String temp : wearId) {
+						wardrobe.wearArticle(temp);
+					}
+					
+				} catch (DirtyClothesException e) {
+					e.print();
+				}
 				break;
-			case "E":
+			
+			case "rem":
+				System.out.println("Removing article...");
+				System.out.println("What are the IDs of the article you want to remove?");
+				String[] remId = s.nextLine().split(" ");
+				try {
+					for (String temp : remId) {
+						wardrobe.removeArticle(temp);
+					}
+					
+				} catch (NoClothesException e) {
+					e.print();
+				}
+				break;
+			case "strip":
+				System.out.println("Removing all clothes...");
+				wardrobe.removeAll();
+				break;
+			case "fit":
+				break;
+			case "e":
 				System.out.println("Exiting");
 				running = false;
 				break;
