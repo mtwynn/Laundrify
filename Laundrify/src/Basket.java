@@ -14,8 +14,9 @@ public class Basket {
 	void wash(Wardrobe w) {
 		for (String key : basket.keySet()) {
 			basket.get(key).resetWear();
-			w.addArticle(basket.remove(key));
+			w.addArticle(basket.get(key));
 		}
+		basket = new HashMap<String, Article>();
 	}
 	
 	void print() {

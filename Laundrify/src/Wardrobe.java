@@ -1,4 +1,10 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.Random;
 
 
 public class Wardrobe {
@@ -62,6 +68,67 @@ public class Wardrobe {
 		return false;
 	}
 	
+	public Outfit generateFit() { // INPROG
+		Article[] articles = wardrobe.values().toArray(new Article[wardrobe.size()]);
+		Outfit o = new Outfit();
+		
+		int counter = 0;
+		Random rand = new Random();
+		while (counter != o.size()) {
+			int r = rand.nextInt(articles.length);
+		
+		    if (o.wear(articles[r])) {
+		    	++counter;
+		    } else {
+		    	continue;
+		    }
+			
+		}
+		o.print();
+		return o;
+	}
+	
+	
+	// Saves this Wardrobe
+	public void save() {
+		System.out.println("Saving...");
+		try {
+			BufferedWriter bw = new BufferedWriter(new FileWriter("Wardrobe.txt", true));
+			for (String key : wardrobe.keySet()) {
+				bw.write(String.format("%s: %s %s %s - WORN %d TIME(S).\n", wardrobe.get(key).getId(), wardrobe.get(key).color, wardrobe.get(key).brand, wardrobe.get(key).type, wardrobe.get(key).wearCount));
+				bw.flush();
+			}
+			
+			bw.close();
+		} catch (IOException e) {
+			System.out.println("There was a problem saving your file.");
+		}
+		System.out.println("Saved!");
+		
+	}
+	
+	// Loads this wardrobe ID: Color Brand Type - WORN INT TIME(S).
+	public void load (String path) {
+		System.out.println("Loading...");
+		HashMap<String, Article> w = new HashMap<String, Article>();
+		
+		try {
+			BufferedReader br = new BufferedReader(new FileReader(path));
+			String in;
+			while ((in = br.readLine()) != null) {
+				String[] articleStr = in.split(" ");
+				
+				Article a = new Article(null, articleStr[3], articleStr[1], articleStr[2], articleStr[0].substring(0, 2), false, Integer.parseInt(articleStr[6]));
+				w.put(articleStr[3], a);
+			}
+			
+			br.close();
+		} catch (IOException e) {
+			System.out.println("There was a problem loading your file.");
+		}
+        this.wardrobe = w;
+        System.out.println("Loaded!");
+	}
 	
 	// Prints this Wardrobe
 		public void print() {

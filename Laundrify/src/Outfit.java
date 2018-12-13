@@ -14,11 +14,13 @@ public class Outfit {
 	
 	
 	// Wear an article
-	public void wear(Article a) {
+	public boolean wear(Article a) {
 		if (outfit.get(a.type) == null) {
 			outfit.put(a.type, a);
+			return true;
 		} else {
 			System.out.println(String.format("You're already wearing (a) %s!", a.type));
+			return false;
 		}
 	}
 	
@@ -41,6 +43,10 @@ public class Outfit {
 			}
 			
 		}
+	}
+	
+	public int size() {
+		return outfit.size();
 	}
 	
 	

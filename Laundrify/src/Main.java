@@ -27,6 +27,8 @@ public class Main {
 			System.out.println("REM  :   Remove an article");
 			System.out.println("STRIP:   Take off all clothes");
 			System.out.println("FIT  :   Make me an outfit!");
+			System.out.println("SAVE :   Save this wardrobe");
+			System.out.println("LOAD :   Load a wardrobe");
 			System.out.println("E    :   Exit");
 			String command = s.nextLine().toLowerCase().trim();
 			
@@ -34,19 +36,19 @@ public class Main {
 			
 			case "add":
 				System.out.println("Adding to wardrobe...");
-				System.out.println("What kind of clothing is it? (T-Shirt, Jacket, Jeans, Underwear, or Socks): ");
-				String type = s.nextLine();
-				System.out.println("What brand is it? ");
-				String brand = s.nextLine();
 				System.out.println("What color is it?: ");
 				String color = s.nextLine();
+				System.out.println("What brand is it? ");
+				String brand = s.nextLine();
+				System.out.println("What kind of clothing is it? (T-Shirt, Jacket, Jeans, Underwear, or Socks): ");
+				String type = s.nextLine();
 				System.out.println("Give it a unique ID!: (ex. A1)");
 				String id = s.nextLine();
 				while (wardrobe.containsId(id)) {
 					System.out.println("You already have that ID in your wardrobe. Please try another ID.");
 					id = s.nextLine();
 				}
-				wardrobe.addArticle(new Article(null, type, brand, color, id, false, 0));
+				wardrobe.addArticle(new Article(null, type, color, brand, id, false, 0));
 				break;
 				
 			case "ldy":
@@ -97,12 +99,23 @@ public class Main {
 					e.print();
 				}
 				break;
+				
 			case "strip":
 				System.out.println("Removing all clothes...");
 				wardrobe.removeAll();
 				break;
+				
 			case "fit":
+				wardrobe.generateFit();
 				break;
+			
+			case "save":
+				wardrobe.save();
+				break;
+			case "load":
+				wardrobe.load("Wardrobe.txt");
+				break;
+				
 			case "e":
 				System.out.println("Exiting");
 				running = false;
