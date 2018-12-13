@@ -72,12 +72,14 @@ public class Wardrobe {
 		Article[] articles = wardrobe.values().toArray(new Article[wardrobe.size()]);
 		Outfit o = new Outfit();
 		
-		int counter = 0;
+		int counter = 1;
 		Random rand = new Random();
 		while (counter != o.size()) {
+			System.out.println("Counter: " + counter + "; O.size(): " + o.size());
 			int r = rand.nextInt(articles.length);
 		
-		    if (o.wear(articles[r])) {
+		    if (o.outfit.get(articles[r].type) == null) {
+		    	o.wear(articles[r]);
 		    	++counter;
 		    } else {
 		    	continue;
@@ -110,23 +112,21 @@ public class Wardrobe {
 	// Loads this wardrobe ID: Color Brand Type - WORN INT TIME(S).
 	public void load (String path) {
 		System.out.println("Loading...");
-		HashMap<String, Article> w = new HashMap<String, Article>();
+		wardrobe = new HashMap<String, Article>();
 		
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(path));
 			String in;
 			while ((in = br.readLine()) != null) {
 				String[] articleStr = in.split(" ");
-				
 				Article a = new Article(null, articleStr[3], articleStr[1], articleStr[2], articleStr[0].substring(0, 2), false, Integer.parseInt(articleStr[6]));
-				w.put(articleStr[3], a);
+				addArticle(a);
 			}
 			
 			br.close();
 		} catch (IOException e) {
 			System.out.println("There was a problem loading your file.");
 		}
-        this.wardrobe = w;
         System.out.println("Loaded!");
 	}
 	

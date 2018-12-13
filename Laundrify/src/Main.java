@@ -106,12 +106,15 @@ public class Main {
 				break;
 				
 			case "fit":
-				wardrobe.generateFit();
+				Outfit o = wardrobe.generateFit();
+				System.out.println("YOUR SUGGESTED OUTFIT: ");
+				o.print();
 				break;
 			
 			case "save":
 				wardrobe.save();
 				break;
+				
 			case "load":
 				wardrobe.load("Wardrobe.txt");
 				break;
