@@ -116,7 +116,9 @@ public class Main {
 				break;
 				
 			case "load":
-				wardrobe.load("Wardrobe.txt");
+				System.out.println("Please type the file path: ");
+				String path = s.nextLine();
+				wardrobe.load(path);
 				break;
 				
 			case "e":

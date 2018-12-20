@@ -74,6 +74,10 @@ public class Wardrobe {
 		
 		int counter = 1;
 		Random rand = new Random();
+		if (articles.length < 5) {
+			System.out.println("Not enough clothes for an outfit");
+			return o;
+		}
 		while (counter != o.size()) {
 			System.out.println("Counter: " + counter + "; O.size(): " + o.size());
 			int r = rand.nextInt(articles.length);
@@ -119,7 +123,7 @@ public class Wardrobe {
 			String in;
 			while ((in = br.readLine()) != null) {
 				String[] articleStr = in.split(" ");
-				Article a = new Article(null, articleStr[3], articleStr[1], articleStr[2], articleStr[0].substring(0, 2), false, Integer.parseInt(articleStr[6]));
+				Article a = new Article(null, articleStr[3], articleStr[1], articleStr[2], articleStr[0].substring(0, articleStr[0].length() - 1), false, Integer.parseInt(articleStr[6]));
 				addArticle(a);
 			}
 			

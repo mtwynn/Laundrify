@@ -8,6 +8,7 @@ public class Article {
 	private String id;
 	boolean currentlyWorn;
 	int wearCount;
+	int totalWearCount;
 	
 	Article(Image img, String type, String color, String brand, String id, boolean currentlyWorn, int wearCount) {
 		this.img = img;
