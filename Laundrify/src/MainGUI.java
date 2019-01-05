@@ -1,4 +1,7 @@
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
@@ -11,9 +14,11 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
@@ -31,7 +36,11 @@ public class MainGUI extends Application {
 		StackPane root = new StackPane();
 		root.setStyle("-fx-background-color: #BCDBF4");
 		
-		Scene scene = new Scene(root, 320, 568, Color.RED);
+		StackPane home = new StackPane();
+		home.setStyle("-fx-background-color: #BCDBF4");
+		
+		Scene scene = new Scene(root, 320, 568);
+		Scene scene2 = new Scene(home, 320, 568);
 		
 		// Login
 		TextField username = new TextField();
@@ -40,15 +49,42 @@ public class MainGUI extends Application {
 		username.setMaxWidth(160);
 		username.setTranslateY(0);
 		
-		TextField password = new TextField();
+		PasswordField password = new PasswordField();
 		password.setPromptText("Password");
 		password.getText();
 		password.setMaxWidth(160);
 		password.setTranslateY(40);
 		
+		Label loginError = new Label("INVALID USERNAME/PASSWORD. PLEASE TRY AGAIN");
+		loginError.setVisible(false);
+		loginError.setTranslateY(120);
+		
 		Button login = new Button();
 		login.setText("Login");
 		login.setTranslateY(80);
+		login.setOnAction(e -> {
+			String info = username.getText() + " " + password.getText();
+			try {
+				if (checkDB(info)) {
+					mainStage.setScene(scene2);
+				} else {
+					loginError.setVisible(true);
+				}
+			} catch (Exception e1) {}
+		});
+		
+		scene.setOnKeyPressed(e -> {
+			if (e.getCode() == KeyCode.ENTER) {
+				String info = username.getText() + " " + password.getText();
+				try {
+					if (checkDB(info)) {
+						mainStage.setScene(scene2);
+					} else {
+						loginError.setVisible(true);
+					}
+				} catch (Exception e1) {}
+			}
+		});
 		
 		Label connect = new Label("CONNECT WITH...");
 		connect.setTranslateY(170);
@@ -76,12 +112,23 @@ public class MainGUI extends Application {
 		google.setScaleY(0.12);
 		google.setTranslateY(245);
 		
-		root.getChildren().addAll(logo, icon, username, password, login, connect, fb, google);
+		root.getChildren().addAll(logo, icon, username, password, login, loginError, connect, fb, google);
 		
 		// Display
 		mainStage.setScene(scene);
 		mainStage.show();
-		
-		
+	}
+	
+	public boolean checkDB(String info) throws Exception {
+		BufferedReader br = new BufferedReader(new FileReader(new File("database.txt")));
+		String line = new String();
+		while ( (line = br.readLine()) != null) {
+			if (line.equals(info)) {
+				br.close();
+				return true;
+			}
+		}
+		br.close();
+		return false;
 	}
 }
