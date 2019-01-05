@@ -51,12 +51,6 @@ public class Outfit {
 	
 	
 	
-	
-	
-	
-	
-	
-	
 	// Prints this Outfit
 	public void print() {
 		System.out.println("====YOUR CURRENT OUTFIT====");
