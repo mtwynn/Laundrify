@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C58F21E7E1DC00561634 /* AppDelegate.swift */; };
+		C648C59221E7E1DC00561634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C59121E7E1DC00561634 /* ViewController.swift */; };
+		C648C59521E7E1DC00561634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59321E7E1DC00561634 /* Main.storyboard */; };
+		C648C59721E7E1DE00561634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C648C59621E7E1DE00561634 /* Assets.xcassets */; };
+		C648C59A21E7E1DE00561634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */; };
+		C648C5A521E7E1DE00561634 /* LaundrifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C5A421E7E1DE00561634 /* LaundrifyTests.swift */; };
+		C648C5B021E7E1DE00561634 /* LaundrifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C5AF21E7E1DE00561634 /* LaundrifyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C648C5A121E7E1DE00561634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C648C58421E7E1DC00561634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C648C58B21E7E1DC00561634;
+			remoteInfo = Laundrify;
+		};
+		C648C5AC21E7E1DE00561634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C648C58421E7E1DC00561634 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C648C58B21E7E1DC00561634;
+			remoteInfo = Laundrify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C648C58C21E7E1DC00561634 /* Laundrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laundrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C648C58F21E7E1DC00561634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C648C59121E7E1DC00561634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C648C59421E7E1DC00561634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C648C59621E7E1DE00561634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C648C59921E7E1DE00561634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C648C59B21E7E1DE00561634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C648C5A021E7E1DE00561634 /* LaundrifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundrifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C648C5A421E7E1DE00561634 /* LaundrifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundrifyTests.swift; sourceTree = "<group>"; };
+		C648C5A621E7E1DE00561634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C648C5AB21E7E1DE00561634 /* LaundrifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundrifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C648C5AF21E7E1DE00561634 /* LaundrifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundrifyUITests.swift; sourceTree = "<group>"; };
+		C648C5B121E7E1DE00561634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C648C58921E7E1DC00561634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C59D21E7E1DE00561634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C5A821E7E1DE00561634 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C648C58321E7E1DC00561634 = {
+			isa = PBXGroup;
+			children = (
+				C648C58E21E7E1DC00561634 /* Laundrify */,
+				C648C5A321E7E1DE00561634 /* LaundrifyTests */,
+				C648C5AE21E7E1DE00561634 /* LaundrifyUITests */,
+				C648C58D21E7E1DC00561634 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C648C58D21E7E1DC00561634 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C648C58C21E7E1DC00561634 /* Laundrify.app */,
+				C648C5A021E7E1DE00561634 /* LaundrifyTests.xctest */,
+				C648C5AB21E7E1DE00561634 /* LaundrifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C648C58E21E7E1DC00561634 /* Laundrify */ = {
+			isa = PBXGroup;
+			children = (
+				C648C58F21E7E1DC00561634 /* AppDelegate.swift */,
+				C648C59121E7E1DC00561634 /* ViewController.swift */,
+				C648C59321E7E1DC00561634 /* Main.storyboard */,
+				C648C59621E7E1DE00561634 /* Assets.xcassets */,
+				C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */,
+				C648C59B21E7E1DE00561634 /* Info.plist */,
+			);
+			path = Laundrify;
+			sourceTree = "<group>";
+		};
+		C648C5A321E7E1DE00561634 /* LaundrifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C648C5A421E7E1DE00561634 /* LaundrifyTests.swift */,
+				C648C5A621E7E1DE00561634 /* Info.plist */,
+			);
+			path = LaundrifyTests;
+			sourceTree = "<group>";
+		};
+		C648C5AE21E7E1DE00561634 /* LaundrifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C648C5AF21E7E1DE00561634 /* LaundrifyUITests.swift */,
+				C648C5B121E7E1DE00561634 /* Info.plist */,
+			);
+			path = LaundrifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C648C58B21E7E1DC00561634 /* Laundrify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C648C5B421E7E1DE00561634 /* Build configuration list for PBXNativeTarget "Laundrify" */;
+			buildPhases = (
+				C648C58821E7E1DC00561634 /* Sources */,
+				C648C58921E7E1DC00561634 /* Frameworks */,
+				C648C58A21E7E1DC00561634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Laundrify;
+			productName = Laundrify;
+			productReference = C648C58C21E7E1DC00561634 /* Laundrify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C648C59F21E7E1DE00561634 /* LaundrifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C648C5B721E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyTests" */;
+			buildPhases = (
+				C648C59C21E7E1DE00561634 /* Sources */,
+				C648C59D21E7E1DE00561634 /* Frameworks */,
+				C648C59E21E7E1DE00561634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C648C5A221E7E1DE00561634 /* PBXTargetDependency */,
+			);
+			name = LaundrifyTests;
+			productName = LaundrifyTests;
+			productReference = C648C5A021E7E1DE00561634 /* LaundrifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C648C5AA21E7E1DE00561634 /* LaundrifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C648C5BA21E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyUITests" */;
+			buildPhases = (
+				C648C5A721E7E1DE00561634 /* Sources */,
+				C648C5A821E7E1DE00561634 /* Frameworks */,
+				C648C5A921E7E1DE00561634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C648C5AD21E7E1DE00561634 /* PBXTargetDependency */,
+			);
+			name = LaundrifyUITests;
+			productName = LaundrifyUITests;
+			productReference = C648C5AB21E7E1DE00561634 /* LaundrifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C648C58421E7E1DC00561634 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tam Nguyen";
+				TargetAttributes = {
+					C648C58B21E7E1DC00561634 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C648C59F21E7E1DE00561634 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C648C58B21E7E1DC00561634;
+					};
+					C648C5AA21E7E1DE00561634 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C648C58B21E7E1DC00561634;
+					};
+				};
+			};
+			buildConfigurationList = C648C58721E7E1DC00561634 /* Build configuration list for PBXProject "Laundrify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C648C58321E7E1DC00561634;
+			productRefGroup = C648C58D21E7E1DC00561634 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C648C58B21E7E1DC00561634 /* Laundrify */,
+				C648C59F21E7E1DE00561634 /* LaundrifyTests */,
+				C648C5AA21E7E1DE00561634 /* LaundrifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C648C58A21E7E1DC00561634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C648C59A21E7E1DE00561634 /* LaunchScreen.storyboard in Resources */,
+				C648C59721E7E1DE00561634 /* Assets.xcassets in Resources */,
+				C648C59521E7E1DC00561634 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C59E21E7E1DE00561634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C5A921E7E1DE00561634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C648C58821E7E1DC00561634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C648C59221E7E1DC00561634 /* ViewController.swift in Sources */,
+				C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C59C21E7E1DE00561634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C648C5A521E7E1DE00561634 /* LaundrifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C648C5A721E7E1DE00561634 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C648C5B021E7E1DE00561634 /* LaundrifyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C648C5A221E7E1DE00561634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C648C58B21E7E1DC00561634 /* Laundrify */;
+			targetProxy = C648C5A121E7E1DE00561634 /* PBXContainerItemProxy */;
+		};
+		C648C5AD21E7E1DE00561634 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C648C58B21E7E1DC00561634 /* Laundrify */;
+			targetProxy = C648C5AC21E7E1DE00561634 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C648C59321E7E1DC00561634 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C648C59421E7E1DC00561634 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C648C59921E7E1DE00561634 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C648C5B221E7E1DE00561634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C648C5B321E7E1DE00561634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C648C5B521E7E1DE00561634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = Laundrify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.Laundrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C648C5B621E7E1DE00561634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = Laundrify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.Laundrify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C648C5B821E7E1DE00561634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = LaundrifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.LaundrifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laundrify.app/Laundrify";
+			};
+			name = Debug;
+		};
+		C648C5B921E7E1DE00561634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = LaundrifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.LaundrifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Laundrify.app/Laundrify";
+			};
+			name = Release;
+		};
+		C648C5BB21E7E1DE00561634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = LaundrifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.LaundrifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Laundrify;
+			};
+			name = Debug;
+		};
+		C648C5BC21E7E1DE00561634 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NZM4H7RMP;
+				INFOPLIST_FILE = LaundrifyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtwynn.LaundrifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Laundrify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C648C58721E7E1DC00561634 /* Build configuration list for PBXProject "Laundrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C648C5B221E7E1DE00561634 /* Debug */,
+				C648C5B321E7E1DE00561634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C648C5B421E7E1DE00561634 /* Build configuration list for PBXNativeTarget "Laundrify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C648C5B521E7E1DE00561634 /* Debug */,
+				C648C5B621E7E1DE00561634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C648C5B721E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C648C5B821E7E1DE00561634 /* Debug */,
+				C648C5B921E7E1DE00561634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C648C5BA21E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C648C5BB21E7E1DE00561634 /* Debug */,
+				C648C5BC21E7E1DE00561634 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C648C58421E7E1DC00561634 /* Project object */;
+}
