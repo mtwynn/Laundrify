@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0065EC9D89E5BBAB238DDD14 /* Pods_LaundrifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */; };
+		1FF449596711856AEFBD11F3 /* Pods_Laundrify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */; };
+		5CDF91A7784ED7D09AD03EB2 /* Pods_LaundrifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */; };
 		C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C58F21E7E1DC00561634 /* AppDelegate.swift */; };
 		C648C59221E7E1DC00561634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C59121E7E1DC00561634 /* ViewController.swift */; };
 		C648C59521E7E1DC00561634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59321E7E1DC00561634 /* Main.storyboard */; };
@@ -14,6 +17,24 @@
 		C648C59A21E7E1DE00561634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */; };
 		C648C5A521E7E1DE00561634 /* LaundrifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C5A421E7E1DE00561634 /* LaundrifyTests.swift */; };
 		C648C5B021E7E1DE00561634 /* LaundrifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C5AF21E7E1DE00561634 /* LaundrifyUITests.swift */; };
+		C6785221223DF5280023FA4C /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678520F223DF5220023FA4C /* Lato-Italic.ttf */; };
+		C6785222223DF5280023FA4C /* Lato-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785210223DF5220023FA4C /* Lato-HairlineItalic.ttf */; };
+		C6785223223DF5280023FA4C /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785211223DF5230023FA4C /* Lato-BoldItalic.ttf */; };
+		C6785224223DF5280023FA4C /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785212223DF5230023FA4C /* Lato-Heavy.ttf */; };
+		C6785225223DF5280023FA4C /* Lato-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785213223DF5230023FA4C /* Lato-SemiboldItalic.ttf */; };
+		C6785226223DF5280023FA4C /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785214223DF5230023FA4C /* Lato-Thin.ttf */; };
+		C6785227223DF5280023FA4C /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785215223DF5240023FA4C /* Lato-Black.ttf */; };
+		C6785228223DF5280023FA4C /* Lato-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785216223DF5240023FA4C /* Lato-Semibold.ttf */; };
+		C6785229223DF5280023FA4C /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785217223DF5240023FA4C /* Lato-LightItalic.ttf */; };
+		C678522A223DF5280023FA4C /* Lato-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785218223DF5250023FA4C /* Lato-Medium.ttf */; };
+		C678522B223DF5280023FA4C /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785219223DF5250023FA4C /* Lato-Light.ttf */; };
+		C678522C223DF5280023FA4C /* Lato-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521A223DF5250023FA4C /* Lato-HeavyItalic.ttf */; };
+		C678522D223DF5280023FA4C /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521B223DF5260023FA4C /* Lato-ThinItalic.ttf */; };
+		C678522E223DF5280023FA4C /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521C223DF5260023FA4C /* Lato-BlackItalic.ttf */; };
+		C678522F223DF5280023FA4C /* Lato-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521D223DF5260023FA4C /* Lato-Hairline.ttf */; };
+		C6785230223DF5280023FA4C /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521E223DF5270023FA4C /* Lato-Regular.ttf */; };
+		C6785231223DF5280023FA4C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521F223DF5270023FA4C /* Lato-Bold.ttf */; };
+		C6785232223DF5280023FA4C /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +55,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundrifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B1B0CA06C23F2628E98D361 /* Pods-Laundrify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundrify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify.debug.xcconfig"; sourceTree = "<group>"; };
+		457D5F83A595D770087746A5 /* Pods-LaundrifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyUITests/Pods-LaundrifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		56DC78E4B412E29DE9381D20 /* Pods-LaundrifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyTests/Pods-LaundrifyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundrifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Laundrify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A9564A34F3956515EAB5A2 /* Pods-LaundrifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyTests/Pods-LaundrifyTests.release.xcconfig"; sourceTree = "<group>"; };
 		C648C58C21E7E1DC00561634 /* Laundrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laundrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C648C58F21E7E1DC00561634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C648C59121E7E1DC00561634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +75,26 @@
 		C648C5AB21E7E1DE00561634 /* LaundrifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LaundrifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C648C5AF21E7E1DE00561634 /* LaundrifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundrifyUITests.swift; sourceTree = "<group>"; };
 		C648C5B121E7E1DE00561634 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C678520F223DF5220023FA4C /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		C6785210223DF5220023FA4C /* Lato-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HairlineItalic.ttf"; sourceTree = "<group>"; };
+		C6785211223DF5230023FA4C /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		C6785212223DF5230023FA4C /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		C6785213223DF5230023FA4C /* Lato-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		C6785214223DF5230023FA4C /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		C6785215223DF5240023FA4C /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		C6785216223DF5240023FA4C /* Lato-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Semibold.ttf"; sourceTree = "<group>"; };
+		C6785217223DF5240023FA4C /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		C6785218223DF5250023FA4C /* Lato-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Medium.ttf"; sourceTree = "<group>"; };
+		C6785219223DF5250023FA4C /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		C678521A223DF5250023FA4C /* Lato-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		C678521B223DF5260023FA4C /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		C678521C223DF5260023FA4C /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		C678521D223DF5260023FA4C /* Lato-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Hairline.ttf"; sourceTree = "<group>"; };
+		C678521E223DF5270023FA4C /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		C678521F223DF5270023FA4C /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DE99F3C69666E20BBFD23CB6 /* Pods-Laundrify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundrify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify.release.xcconfig"; sourceTree = "<group>"; };
+		E8FEC413340576587F6A80A3 /* Pods-LaundrifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyUITests/Pods-LaundrifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF449596711856AEFBD11F3 /* Pods_Laundrify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDF91A7784ED7D09AD03EB2 /* Pods_LaundrifyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0065EC9D89E5BBAB238DDD14 /* Pods_LaundrifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +128,13 @@
 		C648C58321E7E1DC00561634 = {
 			isa = PBXGroup;
 			children = (
+				C6785233223DF53E0023FA4C /* Fonts */,
 				C648C58E21E7E1DC00561634 /* Laundrify */,
 				C648C5A321E7E1DE00561634 /* LaundrifyTests */,
 				C648C5AE21E7E1DE00561634 /* LaundrifyUITests */,
 				C648C58D21E7E1DC00561634 /* Products */,
+				F1E6E16B8919CD597220C5AD /* Pods */,
+				E27987AB4CAA51E13362FD00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +151,8 @@
 		C648C58E21E7E1DC00561634 /* Laundrify */ = {
 			isa = PBXGroup;
 			children = (
+				C6785209223DE6F30023FA4C /* ViewControllers */,
 				C648C58F21E7E1DC00561634 /* AppDelegate.swift */,
-				C648C59121E7E1DC00561634 /* ViewController.swift */,
 				C648C59321E7E1DC00561634 /* Main.storyboard */,
 				C648C59621E7E1DE00561634 /* Assets.xcassets */,
 				C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */,
@@ -125,6 +179,62 @@
 			path = LaundrifyUITests;
 			sourceTree = "<group>";
 		};
+		C6785209223DE6F30023FA4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C648C59121E7E1DC00561634 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6785233223DF53E0023FA4C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C6785215223DF5240023FA4C /* Lato-Black.ttf */,
+				C678521C223DF5260023FA4C /* Lato-BlackItalic.ttf */,
+				C678521F223DF5270023FA4C /* Lato-Bold.ttf */,
+				C6785211223DF5230023FA4C /* Lato-BoldItalic.ttf */,
+				C678521D223DF5260023FA4C /* Lato-Hairline.ttf */,
+				C6785210223DF5220023FA4C /* Lato-HairlineItalic.ttf */,
+				C6785212223DF5230023FA4C /* Lato-Heavy.ttf */,
+				C678521A223DF5250023FA4C /* Lato-HeavyItalic.ttf */,
+				C678520F223DF5220023FA4C /* Lato-Italic.ttf */,
+				C6785219223DF5250023FA4C /* Lato-Light.ttf */,
+				C6785217223DF5240023FA4C /* Lato-LightItalic.ttf */,
+				C6785218223DF5250023FA4C /* Lato-Medium.ttf */,
+				C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */,
+				C678521E223DF5270023FA4C /* Lato-Regular.ttf */,
+				C6785216223DF5240023FA4C /* Lato-Semibold.ttf */,
+				C6785213223DF5230023FA4C /* Lato-SemiboldItalic.ttf */,
+				C6785214223DF5230023FA4C /* Lato-Thin.ttf */,
+				C678521B223DF5260023FA4C /* Lato-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E27987AB4CAA51E13362FD00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */,
+				0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */,
+				77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1E6E16B8919CD597220C5AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B1B0CA06C23F2628E98D361 /* Pods-Laundrify.debug.xcconfig */,
+				DE99F3C69666E20BBFD23CB6 /* Pods-Laundrify.release.xcconfig */,
+				56DC78E4B412E29DE9381D20 /* Pods-LaundrifyTests.debug.xcconfig */,
+				A9A9564A34F3956515EAB5A2 /* Pods-LaundrifyTests.release.xcconfig */,
+				457D5F83A595D770087746A5 /* Pods-LaundrifyUITests.debug.xcconfig */,
+				E8FEC413340576587F6A80A3 /* Pods-LaundrifyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C648C5B421E7E1DE00561634 /* Build configuration list for PBXNativeTarget "Laundrify" */;
 			buildPhases = (
+				BBCB4A9EF161DC51439AD71E /* [CP] Check Pods Manifest.lock */,
 				C648C58821E7E1DC00561634 /* Sources */,
 				C648C58921E7E1DC00561634 /* Frameworks */,
 				C648C58A21E7E1DC00561634 /* Resources */,
+				CF61A4545A4C843A35C8602A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C648C5B721E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyTests" */;
 			buildPhases = (
+				2F7D4F75DF8D2CB34FBA9B52 /* [CP] Check Pods Manifest.lock */,
 				C648C59C21E7E1DE00561634 /* Sources */,
 				C648C59D21E7E1DE00561634 /* Frameworks */,
 				C648C59E21E7E1DE00561634 /* Resources */,
@@ -167,6 +280,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C648C5BA21E7E1DE00561634 /* Build configuration list for PBXNativeTarget "LaundrifyUITests" */;
 			buildPhases = (
+				1B82AF67BE84BCFA05DED100 /* [CP] Check Pods Manifest.lock */,
 				C648C5A721E7E1DE00561634 /* Sources */,
 				C648C5A821E7E1DE00561634 /* Frameworks */,
 				C648C5A921E7E1DE00561634 /* Resources */,
@@ -229,6 +343,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6785221223DF5280023FA4C /* Lato-Italic.ttf in Resources */,
+				C6785222223DF5280023FA4C /* Lato-HairlineItalic.ttf in Resources */,
+				C6785223223DF5280023FA4C /* Lato-BoldItalic.ttf in Resources */,
+				C6785224223DF5280023FA4C /* Lato-Heavy.ttf in Resources */,
+				C6785225223DF5280023FA4C /* Lato-SemiboldItalic.ttf in Resources */,
+				C6785226223DF5280023FA4C /* Lato-Thin.ttf in Resources */,
+				C6785227223DF5280023FA4C /* Lato-Black.ttf in Resources */,
+				C6785228223DF5280023FA4C /* Lato-Semibold.ttf in Resources */,
+				C6785229223DF5280023FA4C /* Lato-LightItalic.ttf in Resources */,
+				C678522A223DF5280023FA4C /* Lato-Medium.ttf in Resources */,
+				C678522B223DF5280023FA4C /* Lato-Light.ttf in Resources */,
+				C678522C223DF5280023FA4C /* Lato-HeavyItalic.ttf in Resources */,
+				C678522D223DF5280023FA4C /* Lato-ThinItalic.ttf in Resources */,
+				C678522E223DF5280023FA4C /* Lato-BlackItalic.ttf in Resources */,
+				C678522F223DF5280023FA4C /* Lato-Hairline.ttf in Resources */,
+				C6785230223DF5280023FA4C /* Lato-Regular.ttf in Resources */,
+				C6785231223DF5280023FA4C /* Lato-Bold.ttf in Resources */,
+				C6785232223DF5280023FA4C /* Lato-MediumItalic.ttf in Resources */,
 				C648C59A21E7E1DE00561634 /* LaunchScreen.storyboard in Resources */,
 				C648C59721E7E1DE00561634 /* Assets.xcassets in Resources */,
 				C648C59521E7E1DC00561634 /* Main.storyboard in Resources */,
@@ -250,6 +382,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B82AF67BE84BCFA05DED100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaundrifyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F7D4F75DF8D2CB34FBA9B52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaundrifyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBCB4A9EF161DC51439AD71E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Laundrify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF61A4545A4C843A35C8602A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C648C58821E7E1DC00561634 /* Sources */ = {
@@ -430,6 +655,7 @@
 		};
 		C648C5B521E7E1DE00561634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B1B0CA06C23F2628E98D361 /* Pods-Laundrify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +674,7 @@
 		};
 		C648C5B621E7E1DE00561634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE99F3C69666E20BBFD23CB6 /* Pods-Laundrify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +693,7 @@
 		};
 		C648C5B821E7E1DE00561634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56DC78E4B412E29DE9381D20 /* Pods-LaundrifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +715,7 @@
 		};
 		C648C5B921E7E1DE00561634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A9564A34F3956515EAB5A2 /* Pods-LaundrifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +737,7 @@
 		};
 		C648C5BB21E7E1DE00561634 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457D5F83A595D770087746A5 /* Pods-LaundrifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +758,7 @@
 		};
 		C648C5BC21E7E1DE00561634 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8FEC413340576587F6A80A3 /* Pods-LaundrifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

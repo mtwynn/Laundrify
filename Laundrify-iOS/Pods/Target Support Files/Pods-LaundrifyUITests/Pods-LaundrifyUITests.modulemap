@@ -1,0 +1,6 @@
+framework module Pods_LaundrifyUITests {
+  umbrella header "Pods-LaundrifyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
