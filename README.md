@@ -24,11 +24,11 @@ Laundrify is an app that allows users to keep and maintain a virtualized form of
 ---
 ## Wireframes
 ### Login View
-![LoginView](/1.png?raw=true)
+![LoginView](1.png?raw=true)
 
 ### Search View
-![GalleryView](/2.png?raw=true)
+![GalleryView](2.png?raw=true)
 
 ### Wash View
-![ProductView](/3.png?raw=true)
+![ProductView](3.png?raw=true)
 ---
