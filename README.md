@@ -7,11 +7,11 @@ Laundrify is an app that allows users to keep and maintain a virtualized form of
 ### User Stories
 
 **Required Must-have Stories**
-- [] Users can upload pictures of their clothes
-- [] Users can mark their clothes as worn or unworn
+- [ ] Users can upload pictures of their clothes
+- [ ] Users can mark their clothes as worn or unworn
 
 **Optional Nice-to-have Stories**
-- [] Users can compile an outfit with the smart "outfit maker"
+- [ ] Users can compile an outfit with the smart "outfit maker"
 ---
 ### Navigation
 
