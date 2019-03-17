@@ -24,8 +24,7 @@ Laundrify is an app that allows users to keep and maintain a virtualized form of
 ---
 ## Wireframes
 ### Login View
-<img src="https://github.com/mtwynn/Laundrify/blob/master/1.PNG" width="48">
-![LoginView](https://github.com/mtwynn/Laundrify/blob/master/1.PNG)
+<img src="https://github.com/mtwynn/Laundrify/blob/master/1.PNG" width="250">
 
 ### Search View
 ![GalleryView](./2.png?raw=true)
