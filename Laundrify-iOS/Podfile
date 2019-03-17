@@ -8,6 +8,7 @@ target 'Laundrify' do
   # Pods for Laundrify
 
   pod "AlamofireImage"
+  pod "Parse"
 
   target 'LaundrifyTests' do
     inherit! :search_paths

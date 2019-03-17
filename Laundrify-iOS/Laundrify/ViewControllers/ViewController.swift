@@ -24,9 +24,14 @@ class ViewController: UIViewController {
         print("Username: " + usernameField.text!)
         print("Password: " + passwordField.text!)
     }
+    
+    @IBAction func signupButton(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButtonView.layer.cornerRadius = 18
+        loginButtonView.layer.cornerRadius = 22
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "image-2")
