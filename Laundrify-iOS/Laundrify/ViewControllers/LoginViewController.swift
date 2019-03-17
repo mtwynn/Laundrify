@@ -7,31 +7,45 @@
 //
 
 import UIKit
+import Parse
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
-    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     
     @IBOutlet weak var passwordField: UITextField!
     
     @IBOutlet weak var loginButtonView: UIButton!
+    
+    @IBOutlet weak var invalidLabel: UILabel!
     
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
     }
     
     @IBAction func loginButton(_ sender: Any) {
-        print("Username: " + usernameField.text!)
-        print("Password: " + passwordField.text!)
+        let email = emailField.text!
+        let password = passwordField.text!
+        
+        PFUser.logInWithUsername(inBackground: email, password: password) { (user, error) in
+            if user != nil {
+                self.performSegue(withIdentifier: "menuSegue", sender: nil)
+            } else {
+                print("No user")
+                self.invalidLabel.isHidden = false
+            }
+        }
     }
     
-    @IBAction func signupButton(_ sender: Any) {
-        
+    @IBAction func noAccButton(_ sender: Any) {
+        print("Performing segue")
+        self.performSegue(withIdentifier: "signupSegue", sender: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loginButtonView.layer.cornerRadius = 22
+        invalidLabel.isHidden = true
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = #imageLiteral(resourceName: "image-2")

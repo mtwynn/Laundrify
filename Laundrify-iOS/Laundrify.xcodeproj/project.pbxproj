@@ -11,7 +11,7 @@
 		1FF449596711856AEFBD11F3 /* Pods_Laundrify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */; };
 		5CDF91A7784ED7D09AD03EB2 /* Pods_LaundrifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */; };
 		C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C58F21E7E1DC00561634 /* AppDelegate.swift */; };
-		C648C59221E7E1DC00561634 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C59121E7E1DC00561634 /* ViewController.swift */; };
+		C648C59221E7E1DC00561634 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C648C59121E7E1DC00561634 /* LoginViewController.swift */; };
 		C648C59521E7E1DC00561634 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59321E7E1DC00561634 /* Main.storyboard */; };
 		C648C59721E7E1DE00561634 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C648C59621E7E1DE00561634 /* Assets.xcassets */; };
 		C648C59A21E7E1DE00561634 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C648C59821E7E1DE00561634 /* LaunchScreen.storyboard */; };
@@ -35,6 +35,8 @@
 		C6785230223DF5280023FA4C /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521E223DF5270023FA4C /* Lato-Regular.ttf */; };
 		C6785231223DF5280023FA4C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C678521F223DF5270023FA4C /* Lato-Bold.ttf */; };
 		C6785232223DF5280023FA4C /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */; };
+		C69B0A2D223E4E5A005B650E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B0A2C223E4E5A005B650E /* SignupViewController.swift */; };
+		C6E61738223E595800B70F60 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E61737223E595800B70F60 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +66,7 @@
 		A9A9564A34F3956515EAB5A2 /* Pods-LaundrifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyTests/Pods-LaundrifyTests.release.xcconfig"; sourceTree = "<group>"; };
 		C648C58C21E7E1DC00561634 /* Laundrify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Laundrify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C648C58F21E7E1DC00561634 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C648C59121E7E1DC00561634 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C648C59121E7E1DC00561634 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C648C59421E7E1DC00561634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C648C59621E7E1DE00561634 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C648C59921E7E1DE00561634 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		C678521E223DF5270023FA4C /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		C678521F223DF5270023FA4C /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		C69B0A2C223E4E5A005B650E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C6E61737223E595800B70F60 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DE99F3C69666E20BBFD23CB6 /* Pods-Laundrify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundrify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify.release.xcconfig"; sourceTree = "<group>"; };
 		E8FEC413340576587F6A80A3 /* Pods-LaundrifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyUITests/Pods-LaundrifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +186,9 @@
 		C6785209223DE6F30023FA4C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				C648C59121E7E1DC00561634 /* ViewController.swift */,
+				C648C59121E7E1DC00561634 /* LoginViewController.swift */,
+				C69B0A2C223E4E5A005B650E /* SignupViewController.swift */,
+				C6E61737223E595800B70F60 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -485,8 +491,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C648C59221E7E1DC00561634 /* ViewController.swift in Sources */,
+				C69B0A2D223E4E5A005B650E /* SignupViewController.swift in Sources */,
+				C648C59221E7E1DC00561634 /* LoginViewController.swift in Sources */,
 				C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */,
+				C6E61738223E595800B70F60 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
