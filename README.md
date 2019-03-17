@@ -1,4 +1,4 @@
-## Laundrify - Tam Nguyen (C)
+# Laundrify - Tam Nguyen (C)
  
 ### Description
 
