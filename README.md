@@ -1,6 +1,6 @@
-### Laundrify - Tam Nguyen (C)
+## Laundrify - Tam Nguyen (C)
  
-## Description
+### Description
 
 Laundrify is an app that allows users to keep and maintain a virtualized form of their wardrobe, where they can track how many times certain articles of their clothing have been worn. 
 ---
