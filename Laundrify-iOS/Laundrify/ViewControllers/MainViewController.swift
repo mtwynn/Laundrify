@@ -9,7 +9,15 @@
 import UIKit
 import Parse
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+    
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var closetView: UITableView!
+    
+    var articles = [PFObject]()
+    var filteredArticles = [PFObject]()
+    
+    
 
     @IBAction func logoutButton(_ sender: Any) {
         PFUser.logOut()
@@ -22,21 +30,25 @@ class MainViewController: UIViewController {
         
         delegate.window?.rootViewController = loginViewController
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ClothCell", for: indexPath) as! ClothCell
+        cell.totalLabel!.text = "3"
+        cell.dirtyLabel.isHidden = true
+        
+        return cell
     }
-    */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        closetView.delegate = self
+        closetView.dataSource = self
+        searchBar.delegate = self
+    }
 
 }

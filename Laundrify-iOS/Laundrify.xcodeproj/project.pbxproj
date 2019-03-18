@@ -37,6 +37,7 @@
 		C6785232223DF5280023FA4C /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */; };
 		C69B0A2D223E4E5A005B650E /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69B0A2C223E4E5A005B650E /* SignupViewController.swift */; };
 		C6E61738223E595800B70F60 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E61737223E595800B70F60 /* MainViewController.swift */; };
+		C6E6173A223F423300B70F60 /* ClothCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E61739223F423300B70F60 /* ClothCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		C6785220223DF5270023FA4C /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
 		C69B0A2C223E4E5A005B650E /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C6E61737223E595800B70F60 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C6E61739223F423300B70F60 /* ClothCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothCell.swift; sourceTree = "<group>"; };
 		DE99F3C69666E20BBFD23CB6 /* Pods-Laundrify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Laundrify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Laundrify/Pods-Laundrify.release.xcconfig"; sourceTree = "<group>"; };
 		E8FEC413340576587F6A80A3 /* Pods-LaundrifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyUITests/Pods-LaundrifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 				C648C59121E7E1DC00561634 /* LoginViewController.swift */,
 				C69B0A2C223E4E5A005B650E /* SignupViewController.swift */,
 				C6E61737223E595800B70F60 /* MainViewController.swift */,
+				C6E61739223F423300B70F60 /* ClothCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				C648C59221E7E1DC00561634 /* LoginViewController.swift in Sources */,
 				C648C59021E7E1DC00561634 /* AppDelegate.swift in Sources */,
 				C6E61738223E595800B70F60 /* MainViewController.swift in Sources */,
+				C6E6173A223F423300B70F60 /* ClothCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
