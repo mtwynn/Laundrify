@@ -52,6 +52,11 @@ class LoginViewController: UIViewController {
         backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
         self.view.insertSubview(backgroundImage, at: 0)
         
+        
+        let tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        self.view.addGestureRecognizer(tapGesture)
+        
         let swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down

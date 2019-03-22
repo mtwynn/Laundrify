@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Parse
 
-class UploadFinalController: UIViewController {
+class UploadFinalController: UIViewController, UITextFieldDelegate {
     
-    var article: Article?
+    var newImage: UIImage!
     
     @IBOutlet weak var pic: UIImageView!
     
@@ -23,21 +24,60 @@ class UploadFinalController: UIViewController {
     
     @IBAction func finalUploadButton(_ sender: Any) {
         print("Uploading \(nameField.text!) of type \(typeField.text!) with wear count \(wearField.text!)")
-        self.dismiss(animated: true, completion: nil)
+        
+        let upload = PFObject(className: "Picture")
+        
+        upload["name"] = nameField.text
+        upload["type"] = typeField.text
+        upload["wearCount"] = wearField.text
+        upload["owner"] = PFUser.current()
+        
+        let imageData = pic.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        upload["image"] = file
+        
+        upload.saveInBackground { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved!")
+            } else {
+                print("Error saving post, \(error?.localizedDescription)")
+            }
+        }
+        
+        self.tabBarController!.selectedIndex = 0
+        /*
+        let homeView = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        self.navigationController?.pushViewController(homeView, animated: true)*/
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         finalUploadButtonView.layer.cornerRadius = 22
-        pic.image = article?.image
+        pic.image = newImage
+        self.wearField.delegate = self
         
-        let swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        
+        
+        var tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        self.view.addGestureRecognizer(tapGesture)
+        
+        var swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down
         self.view.addGestureRecognizer(swipeDown)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    func textField(_ wearField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
+    {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
@@ -54,4 +94,8 @@ class UploadFinalController: UIViewController {
         }
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

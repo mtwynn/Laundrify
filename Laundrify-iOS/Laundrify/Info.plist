@@ -22,29 +22,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
-	<array>
-		<string>armv7</string>
-	</array>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Lato-Bold.ttf</string>
-		<string>Lato-Light.ttf</string>
-		<string>Lato-LightItalic.ttf</string>
-		<string>Lato-Thin.ttf</string>
-		<string>Lato-ThinItalic.ttf</string>
-		<string>Lato-Black.ttf</string>
-	</array>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
@@ -60,12 +37,35 @@
 			</dict>
 		</dict>
 	</dict>
-        <key>NSCameraUsageDescription</key>
-<string>Users can take pictures of clothes and upload</string>
-        <key>NSPhotoLibraryUsageDescription</key>
-<string>Users can save photos to library.</string>
-<key>NSPhotoLibraryAddUsageDescription</key>
-  <string> photos add description.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Users can take pictures of clothes and upload</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string> photos add description.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Users can save photos to library.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-LightItalic.ttf</string>
+		<string>Lato-Thin.ttf</string>
+		<string>Lato-ThinItalic.ttf</string>
+		<string>Lato-Black.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

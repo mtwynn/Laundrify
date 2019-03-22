@@ -8,10 +8,12 @@
 
 import UIKit
 import Foundation
+import Parse
 
 struct Article {
-    let title: String
-    let price: String
+    let name: String
+    let type: String
+    let wearCount: String
     var image: UIImage
-    // let seller:
+    let owner: PFUser
 }

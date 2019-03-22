@@ -48,9 +48,12 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        var pictureVC = segue.destination as! UploadFinalController
-        var image = imageView.image
-        pictureVC.article?.image = image!
+        if segue.identifier == "uploadNext" {
+            let pictureVC = segue.destination as! UploadFinalController
+            pictureVC.newImage = imageView.image
+            print(imageView.image)
+        }
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {

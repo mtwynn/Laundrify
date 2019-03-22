@@ -39,6 +39,12 @@ class SignupViewController: UIViewController {
 
         // Do any additional setup after loading the view.self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
+        
+        
+        
+        var tapGesture = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        
+        self.view.addGestureRecognizer(tapGesture)
         var swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
         
         swipeDown.direction = UISwipeGestureRecognizer.Direction.down
