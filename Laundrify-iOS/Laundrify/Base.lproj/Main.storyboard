@@ -16,6 +16,9 @@
         <array key="Lato-Light.ttf">
             <string>Lato-Light</string>
         </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
         <array key="Lato-Semibold.ttf">
             <string>Lato-Semibold</string>
         </array>
@@ -33,34 +36,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DL2-bq-tlJ">
-                                <rect key="frame" x="77" y="100" width="104" height="36"/>
+                                <rect key="frame" x="108" y="100" width="104" height="36"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-qu-ND2">
-                                <rect key="frame" x="60" y="232" width="138.5" height="30"/>
+                                <rect key="frame" x="60" y="232" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYE-DL-vma">
-                                <rect key="frame" x="60" y="186" width="138.5" height="30"/>
+                                <rect key="frame" x="60" y="186" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-5a-gjv">
-                                <rect key="frame" x="60" y="278" width="138.5" height="30"/>
+                                <rect key="frame" x="60" y="278" width="200" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrK-B9-1lU">
-                                <rect key="frame" x="60" y="398" width="138.5" height="45"/>
+                                <rect key="frame" x="60" y="398" width="200" height="45"/>
                                 <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="255" id="IfR-4j-0gp"/>
                                     <constraint firstAttribute="height" constant="45" id="m8X-bC-VNl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -73,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qns-L6-Eed">
-                                <rect key="frame" x="84.5" y="467" width="89" height="30"/>
+                                <rect key="frame" x="115.5" y="467" width="89" height="30"/>
                                 <state key="normal" title="Back to login"/>
                                 <connections>
                                     <action selector="backToLoginButton:" destination="MLC-JU-b27" eventType="touchUpInside" id="GGr-9r-JQC"/>
@@ -209,23 +211,40 @@
             </objects>
             <point key="canvasLocation" x="132" y="143"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="a2Z-KG-VBH">
             <objects>
-                <viewController id="ALh-5L-9wO" sceneMemberID="viewController">
+                <viewController id="ALh-5L-9wO" customClass="ProfileViewController" customModule="Laundrify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlr-rY-jTQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Me" translatesAutoresizingMaskIntoConstraints="NO" id="oP4-6A-3Zm">
+                                <rect key="frame" x="16" y="80" width="125" height="125"/>
+                                <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="G5e-JY-hbL"/>
+                                    <constraint firstAttribute="width" constant="125" id="t6S-u0-8bU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oP4-6A-3Zm" firstAttribute="top" secondItem="m7s-U0-BP2" secondAttribute="top" constant="16" id="c1Z-2X-rJF"/>
+                            <constraint firstItem="oP4-6A-3Zm" firstAttribute="leading" secondItem="m7s-U0-BP2" secondAttribute="leading" constant="16" id="iHm-mo-xVZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m7s-U0-BP2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="UqM-uY-RZs"/>
+                    <navigationItem key="navigationItem" title="Profile" id="UqM-uY-RZs"/>
+                    <connections>
+                        <outlet property="profilePicView" destination="oP4-6A-3Zm" id="j8X-40-Wdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYU-z6-7JL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3420" y="-616.64167916041981"/>
         </scene>
-        <!--Search View Controller-->
+        <!--Closet-->
         <scene sceneID="A43-AF-8m3">
             <objects>
                 <viewController storyboardIdentifier="SearchViewController" id="A2Q-o6-LzU" customClass="SearchViewController" customModule="Laundrify" customModuleProvider="target" sceneMemberID="viewController">
@@ -257,7 +276,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="White T-Shirt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ba-Mw-sYl">
-                                                    <rect key="frame" x="116" y="13" width="259" height="21"/>
+                                                    <rect key="frame" x="116" y="13" width="204" height="21"/>
                                                     <fontDescription key="fontDescription" name="Lato-Semibold" family="Lato" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -444,7 +463,7 @@
                         <viewLayoutGuide key="safeArea" id="JN3-DA-nUq"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="eZg-md-5qT">
+                    <navigationItem key="navigationItem" title="Closet" id="eZg-md-5qT">
                         <barButtonItem key="leftBarButtonItem" title="Basket" id="jws-fg-mLQ">
                             <connections>
                                 <segue destination="J3X-OS-bCr" kind="presentation" id="OfD-SG-T6W"/>
@@ -452,6 +471,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="Shirt_2x" id="8Ee-Qi-Qnd">
                             <color key="tintColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="logoutButton:" destination="A2Q-o6-LzU" id="41P-zG-8e0"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -538,7 +560,7 @@
             </objects>
             <point key="canvasLocation" x="5371.875" y="130.98591549295776"/>
         </scene>
-        <!--Upload View Controller-->
+        <!--Upload-->
         <scene sceneID="Wpz-tZ-gbO">
             <objects>
                 <viewController id="YXs-EB-A5z" customClass="UploadViewController" customModule="Laundrify" customModuleProvider="target" sceneMemberID="viewController">
@@ -546,16 +568,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-xv-94m">
-                                <rect key="frame" x="16" y="104" width="85" height="30"/>
-                                <state key="normal" title="Take Picture"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk4-xv-94m">
+                                <rect key="frame" x="64" y="94" width="37" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="camera-icon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="uploadButton:" destination="YXs-EB-A5z" eventType="touchUpInside" id="9gt-kL-BID"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eta-6M-SI2">
-                                <rect key="frame" x="168" y="104" width="136" height="30"/>
-                                <state key="normal" title="Choose from library"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eta-6M-SI2">
+                                <rect key="frame" x="219" y="94" width="37" height="37"/>
+                                <state key="normal" image="library-icon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="libraryButton:" destination="YXs-EB-A5z" eventType="touchUpInside" id="kIg-pp-wOs"/>
                                     <action selector="uploadButton:" destination="YXs-EB-A5z" eventType="touchUpInside" id="URz-Td-lKL"/>
@@ -567,20 +594,44 @@
                                     <constraint firstAttribute="width" secondItem="I1z-m6-CfI" secondAttribute="height" multiplier="1:1" id="aY8-fD-hct"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9o-0l-s6P">
+                                <rect key="frame" x="53.5" y="139" width="58" height="33"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <state key="normal" title="Camera">
+                                    <color key="titleColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadButton:" destination="YXs-EB-A5z" eventType="touchUpInside" id="lDC-xV-7Y7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwi-Lm-CZk">
+                                <rect key="frame" x="211.5" y="139" width="52" height="33"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
+                                <state key="normal" title="Library">
+                                    <color key="titleColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="libraryButton:" destination="YXs-EB-A5z" eventType="touchUpInside" id="bKo-FE-nl6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Yzf-Fc-4yR" firstAttribute="trailing" secondItem="Eta-6M-SI2" secondAttribute="trailing" constant="16" id="Lhz-rq-rBx"/>
-                            <constraint firstItem="Jk4-xv-94m" firstAttribute="leading" secondItem="Yzf-Fc-4yR" secondAttribute="leading" constant="16" id="bFz-EC-2Xb"/>
+                            <constraint firstItem="Xwi-Lm-CZk" firstAttribute="centerX" secondItem="Eta-6M-SI2" secondAttribute="centerX" id="EgU-O7-RVz"/>
+                            <constraint firstItem="Yzf-Fc-4yR" firstAttribute="trailing" secondItem="Eta-6M-SI2" secondAttribute="trailing" constant="64" id="Lhz-rq-rBx"/>
+                            <constraint firstItem="Xwi-Lm-CZk" firstAttribute="top" secondItem="Eta-6M-SI2" secondAttribute="bottom" constant="8" id="TqE-pC-O99"/>
+                            <constraint firstItem="F9o-0l-s6P" firstAttribute="top" secondItem="Jk4-xv-94m" secondAttribute="bottom" constant="8" id="VsU-wc-3e1"/>
+                            <constraint firstItem="Jk4-xv-94m" firstAttribute="leading" secondItem="Yzf-Fc-4yR" secondAttribute="leading" constant="64" id="bFz-EC-2Xb"/>
                             <constraint firstItem="Yzf-Fc-4yR" firstAttribute="trailing" secondItem="I1z-m6-CfI" secondAttribute="trailing" constant="16" id="bJX-RW-Gye"/>
                             <constraint firstItem="I1z-m6-CfI" firstAttribute="leading" secondItem="Yzf-Fc-4yR" secondAttribute="leading" constant="16" id="qIN-m2-skg"/>
+                            <constraint firstItem="F9o-0l-s6P" firstAttribute="centerX" secondItem="Jk4-xv-94m" secondAttribute="centerX" id="rJu-N3-KBT"/>
                             <constraint firstItem="I1z-m6-CfI" firstAttribute="top" secondItem="Yzf-Fc-4yR" secondAttribute="top" constant="128" id="son-XA-UbU"/>
-                            <constraint firstItem="Eta-6M-SI2" firstAttribute="top" secondItem="Yzf-Fc-4yR" secondAttribute="top" constant="40" id="vlJ-TJ-oes"/>
-                            <constraint firstItem="Jk4-xv-94m" firstAttribute="top" secondItem="Yzf-Fc-4yR" secondAttribute="top" constant="40" id="xUk-Z9-nWe"/>
+                            <constraint firstItem="Eta-6M-SI2" firstAttribute="top" secondItem="Yzf-Fc-4yR" secondAttribute="top" constant="30" id="vlJ-TJ-oes"/>
+                            <constraint firstItem="Jk4-xv-94m" firstAttribute="top" secondItem="Yzf-Fc-4yR" secondAttribute="top" constant="30" id="xUk-Z9-nWe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yzf-Fc-4yR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hJ1-Eh-avU">
+                    <navigationItem key="navigationItem" title="Upload" id="hJ1-Eh-avU">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="pE2-Zf-Zk0">
                             <connections>
                                 <action selector="nextButton:" destination="YXs-EB-A5z" id="csV-1v-YIy"/>
@@ -589,6 +640,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="I1z-m6-CfI" id="2Rb-Qt-Bsu"/>
+                        <outlet property="libraryButtonView" destination="Eta-6M-SI2" id="1BC-RE-P3m"/>
+                        <outlet property="takePicButtonView" destination="Jk4-xv-94m" id="Aut-Nn-ufd"/>
                         <segue destination="JDM-uH-xjz" kind="show" identifier="uploadNext" id="lkv-rp-A7I"/>
                     </connections>
                 </viewController>
@@ -720,7 +773,7 @@
         <scene sceneID="sEk-Uz-f08">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CSv-4h-otY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="Zib-MR-Dcg"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="id-icon" selectedImage="id-icon" id="Zib-MR-Dcg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oEt-Jq-4mh">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -739,7 +792,7 @@
         <scene sceneID="Pq7-4Q-pHI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mkv-oF-Uf2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Closet" id="7j8-00-N9K"/>
+                    <tabBarItem key="tabBarItem" title="Closet" image="closet-icon" selectedImage="closet-icon" id="7j8-00-N9K"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bqA-lg-8Qp">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -758,7 +811,7 @@
         <scene sceneID="Rk4-O4-Pw2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qdF-ag-qdM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Upload" id="psf-pg-Go0"/>
+                    <tabBarItem key="tabBarItem" title="Upload" image="camera-icon" selectedImage="camera-icon" id="psf-pg-Go0"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wnd-fO-9Ey">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -811,9 +864,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Me" width="1365" height="1365"/>
         <image name="Shirt_2x" width="50" height="41"/>
+        <image name="camera-icon" width="37.5" height="37.5"/>
+        <image name="closet-icon" width="37.5" height="37.5"/>
+        <image name="id-icon" width="37.5" height="37.5"/>
+        <image name="library-icon" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VHW-f3-ybY"/>
+        <segue reference="LDI-YX-nVI"/>
     </inferredMetricsTieBreakers>
 </document>

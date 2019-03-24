@@ -34,7 +34,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
     }
-    /*
+    
     @IBAction func logoutButton(_ sender: Any) {
         PFUser.logOut()
         
@@ -46,7 +46,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         delegate.window?.rootViewController = loginViewController
     }
-    */
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filteredArticles.count
@@ -92,6 +92,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @objc func loadPics() {
         let query = PFQuery(className: "Picture")
         query.whereKey("state", equalTo: "closet")
+        query.whereKey("owner", equalTo: PFUser.current())
         query.includeKeys(["owner"])
         query.findObjectsInBackground { (queryDict, error) in
             if let queryArticles = queryDict {

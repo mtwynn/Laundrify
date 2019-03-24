@@ -11,10 +11,21 @@ import UIKit
 class UploadViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var takePicButtonView: UIButton!
+    @IBOutlet weak var libraryButtonView: UIButton!
+    
     var article: Article?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        imageView.layer.borderWidth = 2
+        let color : UIColor = UIColor(red: 188/255, green: 219/255, blue: 244/255, alpha: 1.0)
+        imageView.layer.borderColor = color.cgColor
+        
+        
+        
+        
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
         
         let swipeDown = UISwipeGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))

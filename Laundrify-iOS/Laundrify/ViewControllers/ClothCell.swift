@@ -84,7 +84,13 @@ class ClothCell: UITableViewCell, UITextFieldDelegate {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        clothImage.layer.cornerRadius = 10
+        clothImage.clipsToBounds = true
+        clothImage.layer.borderWidth = 2;
+        
+        let color : UIColor = UIColor(red: 188/255, green: 219/255, blue: 244/255, alpha: 1.0)
+        clothImage.layer.borderColor = color.cgColor
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
