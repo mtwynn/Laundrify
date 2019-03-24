@@ -59,7 +59,11 @@ class UploadFinalController: UIViewController, UITextFieldDelegate {
         finalUploadButtonView.layer.cornerRadius = 22
         pic.image = newImage
         self.wearField.delegate = self
-        
+        pic.layer.borderWidth = 2
+        pic.layer.cornerRadius = 10
+        pic.clipsToBounds = true
+        let color : UIColor = UIColor(red: 188/255, green: 219/255, blue: 244/255, alpha: 1.0)
+        pic.layer.borderColor = color.cgColor
         
         
         

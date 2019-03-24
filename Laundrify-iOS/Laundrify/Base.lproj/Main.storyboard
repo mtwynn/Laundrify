@@ -302,7 +302,7 @@
                                                         <action selector="decButton:" destination="L7V-qz-LGO" eventType="touchUpInside" id="EKb-Bh-pn6"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="bezel" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZ3-ZS-Buo">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZ3-ZS-Buo">
                                                     <rect key="frame" x="176" y="50" width="35" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="35" id="KxC-xG-Hj5"/>
@@ -333,9 +333,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-Hg-uvB">
-                                                    <rect key="frame" x="160" y="129" width="43" height="30"/>
-                                                    <state key="normal" title="WEAR"/>
+                                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMn-Hg-uvB">
+                                                    <rect key="frame" x="160" y="129" width="53" height="30"/>
+                                                    <state key="normal" image="add-outfit-icon"/>
                                                     <connections>
                                                         <action selector="wearButton:" destination="L7V-qz-LGO" eventType="touchUpInside" id="oou-Wr-AF4"/>
                                                     </connections>
@@ -352,10 +352,6 @@
                                                     <color key="textColor" red="0.26265265879999999" green="1" blue="0.18637656020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYQ-SO-5fv">
-                                                    <rect key="frame" x="243" y="129" width="44" height="30"/>
-                                                    <state key="normal" title="WASH"/>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLZ-5D-ukz">
                                                     <rect key="frame" x="160" y="82" width="16" height="16"/>
                                                     <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -371,7 +367,7 @@
                                                         <action selector="decTotalButton:" destination="L7V-qz-LGO" eventType="touchUpInside" id="DVf-Kl-crY"/>
                                                     </connections>
                                                 </button>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="bezel" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uns-DQ-MTc">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uns-DQ-MTc">
                                                     <rect key="frame" x="176" y="82" width="35" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="Mbu-tr-ULL"/>
@@ -395,6 +391,10 @@
                                                     <connections>
                                                         <action selector="incTotalButton:" destination="L7V-qz-LGO" eventType="touchUpInside" id="MRc-bq-qtQ"/>
                                                     </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYQ-SO-5fv">
+                                                    <rect key="frame" x="243" y="125.5" width="59" height="37"/>
+                                                    <state key="normal" image="add-basket-icon"/>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -422,7 +422,7 @@
                                                 <constraint firstItem="yIB-9T-apL" firstAttribute="leading" secondItem="J3b-1d-Sip" secondAttribute="trailing" constant="8" id="Z6t-F3-XSm"/>
                                                 <constraint firstItem="rtD-gW-3OZ" firstAttribute="centerX" secondItem="J3b-1d-Sip" secondAttribute="centerX" id="cmp-vN-KGU"/>
                                                 <constraint firstItem="rLZ-5D-ukz" firstAttribute="top" secondItem="Q57-er-lr9" secondAttribute="bottom" constant="16" id="eEK-J2-aOW"/>
-                                                <constraint firstItem="jYQ-SO-5fv" firstAttribute="leading" secondItem="RMn-Hg-uvB" secondAttribute="trailing" constant="40" id="eRb-zE-0wd"/>
+                                                <constraint firstItem="jYQ-SO-5fv" firstAttribute="leading" secondItem="RMn-Hg-uvB" secondAttribute="trailing" constant="30" id="eRb-zE-0wd"/>
                                                 <constraint firstAttribute="bottom" secondItem="tIb-di-mXj" secondAttribute="bottom" constant="24" id="f3j-gj-iwd"/>
                                                 <constraint firstItem="RMn-Hg-uvB" firstAttribute="leading" secondItem="tIb-di-mXj" secondAttribute="trailing" constant="75" id="fIv-YM-ddg"/>
                                                 <constraint firstItem="jYQ-SO-5fv" firstAttribute="centerY" secondItem="tIb-di-mXj" secondAttribute="centerY" id="hzd-2Y-A7r"/>
@@ -442,9 +442,13 @@
                                             <outlet property="clothImage" destination="J3b-1d-Sip" id="gZt-yv-STl"/>
                                             <outlet property="dirtyLabel" destination="rtD-gW-3OZ" id="zOG-J1-gWM"/>
                                             <outlet property="nameLabel" destination="0Ba-Mw-sYl" id="XAj-q2-l6P"/>
+                                            <outlet property="totalDecButtonView" destination="rLZ-5D-ukz" id="52F-95-BaB"/>
                                             <outlet property="totalField" destination="uns-DQ-MTc" id="ehR-8g-lMJ"/>
+                                            <outlet property="totalIncButtonView" destination="V0D-33-Wkg" id="UqK-wf-sBb"/>
                                             <outlet property="washBut" destination="jYQ-SO-5fv" id="ZPO-xt-SjG"/>
+                                            <outlet property="wornDecButtonView" destination="Q57-er-lr9" id="Hju-IJ-7xp"/>
                                             <outlet property="wornField" destination="PZ3-ZS-Buo" id="0dM-2R-oIi"/>
+                                            <outlet property="wornIncButtonView" destination="lLQ-oi-Y8G" id="TP6-ye-GlG"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -464,7 +468,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Closet" id="eZg-md-5qT">
-                        <barButtonItem key="leftBarButtonItem" title="Basket" id="jws-fg-mLQ">
+                        <barButtonItem key="leftBarButtonItem" title="Basket" image="basket-icon" id="jws-fg-mLQ">
                             <connections>
                                 <segue destination="J3X-OS-bCr" kind="presentation" id="OfD-SG-T6W"/>
                             </connections>
@@ -512,10 +516,12 @@
                                                         <constraint firstAttribute="height" constant="100" id="7bI-mP-6jn"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-2b-0Lc">
-                                                    <rect key="frame" x="262" y="46" width="43" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg3-2b-0Lc">
+                                                    <rect key="frame" x="163" y="27" width="149" height="69"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="HANG"/>
+                                                    <state key="normal" title="   HANG" image="hanger-icon">
+                                                        <color key="titleColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -546,7 +552,7 @@
                                 <action selector="doneButton:" destination="xXR-eg-MYz" id="dZj-Id-rdI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Wash" id="L3j-6f-dYi">
+                        <barButtonItem key="rightBarButtonItem" title="Wash" image="wash-icon" id="L3j-6f-dYi">
                             <connections>
                                 <action selector="washButton:" destination="xXR-eg-MYz" id="uxf-1m-9Zb"/>
                             </connections>
@@ -778,6 +784,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oEt-Jq-4mh">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -797,6 +804,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bqA-lg-8Qp">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -816,6 +824,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wnd-fO-9Ey">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.85882352939999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -866,10 +875,15 @@
     <resources>
         <image name="Me" width="1365" height="1365"/>
         <image name="Shirt_2x" width="50" height="41"/>
+        <image name="add-basket-icon" width="59.25" height="37.5"/>
+        <image name="add-outfit-icon" width="53.25" height="30.75"/>
+        <image name="basket-icon" width="37.5" height="37.5"/>
         <image name="camera-icon" width="37.5" height="37.5"/>
         <image name="closet-icon" width="37.5" height="37.5"/>
+        <image name="hanger-icon" width="37.5" height="37.5"/>
         <image name="id-icon" width="37.5" height="37.5"/>
         <image name="library-icon" width="37.5" height="37.5"/>
+        <image name="wash-icon" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="LDI-YX-nVI"/>

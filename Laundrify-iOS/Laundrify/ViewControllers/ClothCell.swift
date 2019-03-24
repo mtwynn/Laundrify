@@ -9,7 +9,12 @@
 import UIKit
 
 class ClothCell: UITableViewCell, UITextFieldDelegate {
-
+    @IBOutlet weak var wornIncButtonView: UIButton!
+    @IBOutlet weak var wornDecButtonView: UIButton!
+    @IBOutlet weak var totalIncButtonView: UIButton!
+    @IBOutlet weak var totalDecButtonView: UIButton!
+    
+    
     @IBOutlet weak var washBut: UIButton!
     @IBOutlet weak var clothImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -86,10 +91,15 @@ class ClothCell: UITableViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         clothImage.layer.cornerRadius = 10
         clothImage.clipsToBounds = true
-        clothImage.layer.borderWidth = 2;
+        clothImage.layer.borderWidth = 2
         
         let color : UIColor = UIColor(red: 188/255, green: 219/255, blue: 244/255, alpha: 1.0)
         clothImage.layer.borderColor = color.cgColor
+        
+        wornIncButtonView.layer.cornerRadius = 4
+        wornDecButtonView.layer.cornerRadius = 4
+        totalIncButtonView.layer.cornerRadius = 4
+        totalDecButtonView.layer.cornerRadius = 4
         
     }
 

@@ -20,6 +20,8 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
         super.viewDidLoad()
         
         imageView.layer.borderWidth = 2
+        imageView.layer.cornerRadius = 10
+        imageView.clipsToBounds = true
         let color : UIColor = UIColor(red: 188/255, green: 219/255, blue: 244/255, alpha: 1.0)
         imageView.layer.borderColor = color.cgColor
         
