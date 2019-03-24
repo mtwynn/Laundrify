@@ -29,7 +29,10 @@ class UploadFinalController: UIViewController, UITextFieldDelegate {
         
         upload["name"] = nameField.text
         upload["type"] = typeField.text
-        upload["wearCount"] = wearField.text
+        upload["wearLimit"] = (wearField.text as! NSString).integerValue
+        upload["wearCount"] = 0
+        upload["totalWears"] = 0
+        upload["state"] = "closet"
         upload["owner"] = PFUser.current()
         
         let imageData = pic.image!.pngData()

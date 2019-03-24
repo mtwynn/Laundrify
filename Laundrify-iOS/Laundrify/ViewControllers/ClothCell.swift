@@ -10,6 +10,7 @@ import UIKit
 
 class ClothCell: UITableViewCell, UITextFieldDelegate {
 
+    @IBOutlet weak var washBut: UIButton!
     @IBOutlet weak var clothImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -57,11 +58,8 @@ class ClothCell: UITableViewCell, UITextFieldDelegate {
     
     @IBAction func wearButton(_ sender: Any) {
         var wearValue = (wornField.text! as NSString).integerValue
-        var totalValue = (totalField.text! as NSString).integerValue
         wearValue += 1
-        totalValue += 1
         wornField.text = String(wearValue)
-        totalField.text = String(totalValue)
         if (wearValue < 5) {
             cleanLabel.isHidden = false
             dirtyLabel.isHidden = true

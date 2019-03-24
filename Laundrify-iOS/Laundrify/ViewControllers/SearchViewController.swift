@@ -18,36 +18,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var filteredArticles = [Article]()
     let myRefreshControl = UIRefreshControl()
     
-
-    @IBAction func logoutButton(_ sender: Any) {
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        
-        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
-        
-        let delegate = UIApplication.shared.delegate as! AppDelegate
-        
-        delegate.window?.rootViewController = loginViewController
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredArticles.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = closetView.dequeueReusableCell(withIdentifier: "ClothCell", for: indexPath) as! ClothCell
-        
-        let article = filteredArticles[indexPath.item]
-        cell.clothImage.image = article.image
-        cell.wornField.text = "0"
-        cell.nameLabel.text = article.name
-        cell.totalField.text = "10"
-        cell.dirtyLabel.isHidden = true
-        
-        return cell
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,6 +34,40 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
     }
+    /*
+    @IBAction func logoutButton(_ sender: Any) {
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        
+        let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        
+        delegate.window?.rootViewController = loginViewController
+    }
+    */
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return filteredArticles.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = closetView.dequeueReusableCell(withIdentifier: "ClothCell", for: indexPath) as! ClothCell
+        
+        let article = filteredArticles[indexPath.item]
+        cell.clothImage.image = article.image
+        cell.wornField.text = article.wearCount.stringValue
+        cell.nameLabel.text = article.name
+        cell.totalField.text = article.total.stringValue
+        cell.dirtyLabel.isHidden = true
+        cell.washBut.tag = indexPath.row
+        cell.washBut.addTarget(self, action: #selector(washTapped(_:)), for: .touchUpInside)
+        
+        return cell
+    }
+    
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // When there is no text, filteredData is the same as the original data
@@ -80,12 +84,14 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         closetView.reloadData()
     }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder() // hides the keyboard.
     }
     
-    @objc func loadPics(){
+    @objc func loadPics() {
         let query = PFQuery(className: "Picture")
+        query.whereKey("state", equalTo: "closet")
         query.includeKeys(["owner"])
         query.findObjectsInBackground { (queryDict, error) in
             if let queryArticles = queryDict {
@@ -96,10 +102,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let url = URL(string: imageFile.url!)!
                     let data = try? Data(contentsOf: url)
                     let pic = UIImage(data: data!)
-                    
-                    let article = Article(name: articleDict["name"] as! String,
+                    let article = Article(id: articleDict.objectId as! String,
+                        name: articleDict["name"] as! String,
                                       type: articleDict["type"] as! String,
-                                      wearCount: articleDict["wearCount"] as! String,
+                                      wearCount: articleDict["wearCount"] as! NSNumber,
+                                      total: articleDict["totalWears"] as! NSNumber,
+                                      wearLimit: articleDict["wearLimit"] as! NSNumber,
                                       image: pic!,
                                       owner: articleDict["owner"] as! PFUser)
                     
@@ -110,6 +118,29 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
             }
         }
+    }
+    
+    @objc func washTapped(_ sender: UIButton) {
+        let article = articles[sender.tag]
+        let name = article.name
+        
+        let query = PFQuery(className: "Picture")
+        query.getObjectInBackground(withId: article.id) {
+            (article: PFObject?, error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let article = article {
+                article["state"] = "basket"
+                article.saveInBackground()
+                self.loadPics()
+            }
+        }
+        
+        let alert = UIAlertController(title: "Washed!", message: "Washing \(article.name)", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(okAction)
+        
+        self.present(alert, animated: true, completion: nil)
     }
 
 }
