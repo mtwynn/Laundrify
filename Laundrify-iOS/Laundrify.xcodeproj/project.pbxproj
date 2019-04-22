@@ -10,6 +10,7 @@
 		0065EC9D89E5BBAB238DDD14 /* Pods_LaundrifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */; };
 		1FF449596711856AEFBD11F3 /* Pods_Laundrify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */; };
 		5CDF91A7784ED7D09AD03EB2 /* Pods_LaundrifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */; };
+		C611FF3F226D680C00704CD3 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C611FF3E226D680C00704CD3 /* libsqlite3.tbd */; };
 		C645AE8C22475026006F2EF3 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AE8B22475026006F2EF3 /* BasketViewController.swift */; };
 		C645AE8E22476188006F2EF3 /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AE8D22476188006F2EF3 /* BasketCell.swift */; };
 		C645AE9022483E2E006F2EF3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645AE8F22483E2E006F2EF3 /* ProfileViewController.swift */; };
@@ -71,6 +72,7 @@
 		77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaundrifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Laundrify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A9564A34F3956515EAB5A2 /* Pods-LaundrifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaundrifyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaundrifyTests/Pods-LaundrifyTests.release.xcconfig"; sourceTree = "<group>"; };
+		C611FF3E226D680C00704CD3 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		C645AE8B22475026006F2EF3 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		C645AE8D22476188006F2EF3 /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
 		C645AE8F22483E2E006F2EF3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C611FF3F226D680C00704CD3 /* libsqlite3.tbd in Frameworks */,
 				1FF449596711856AEFBD11F3 /* Pods_Laundrify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,6 +253,7 @@
 		E27987AB4CAA51E13362FD00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C611FF3E226D680C00704CD3 /* libsqlite3.tbd */,
 				7E5CEE7660B9B1813BCFAC4F /* Pods_Laundrify.framework */,
 				0E93129368F27466FAF76200 /* Pods_LaundrifyTests.framework */,
 				77692CD4B213C6BED34DF9C0 /* Pods_LaundrifyUITests.framework */,

@@ -39,6 +39,7 @@ class UploadFinalController: UIViewController, UITextFieldDelegate {
         let file = PFFileObject(data: imageData!)
         upload["image"] = file
         
+        upload.pinInBackground() 
         upload.saveInBackground { (success, error) in
             if success {
                 self.dismiss(animated: true, completion: nil)

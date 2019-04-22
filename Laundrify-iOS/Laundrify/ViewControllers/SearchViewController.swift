@@ -27,11 +27,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         searchBar.delegate = self
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
-        
-        loadPics()
         myRefreshControl.addTarget(self, action: #selector(loadPics), for: .valueChanged)
         closetView.refreshControl = myRefreshControl
-        
+        loadPics()
         
     }
     
@@ -90,6 +88,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     @objc func loadPics() {
+        print("called")
         let query = PFQuery(className: "Picture")
         query.whereKey("state", equalTo: "closet")
         query.whereKey("owner", equalTo: PFUser.current())
@@ -99,6 +98,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.articles.removeAll()
                 self.filteredArticles.removeAll()
                 for articleDict in queryArticles {
+                    
                     let imageFile = articleDict["image"] as! PFFileObject
                     let url = URL(string: imageFile.url!)!
                     let data = try? Data(contentsOf: url)
@@ -114,12 +114,28 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     
                     self.articles.append(article)
                     self.filteredArticles = self.articles
+                }
+                    if self.articles.count == 0 {
+                        let rect = CGRect(origin: CGPoint(x: 0,y :0), size: CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height))
+                        let messageLabel = UILabel(frame: rect)
+                        messageLabel.text = "You don't have any projects yet.\nYou can create up to 10."
+                        messageLabel.textColor = UIColor.black
+                        messageLabel.numberOfLines = 0;
+                        messageLabel.textAlignment = .center;
+                        messageLabel.font = UIFont(name: "TrebuchetMS", size: 15)
+                        messageLabel.sizeToFit()
+                        
+                        self.closetView.backgroundView = messageLabel;
+                        self.closetView.separatorStyle = .none;
+                    } else {
+                        self.closetView.backgroundView = nil;
+                    }
+                    
                     self.closetView.reloadData()
                     self.myRefreshControl.endRefreshing()
+                    }
                 }
-            }
         }
-    }
     
     @objc func washTapped(_ sender: UIButton) {
         let article = articles[sender.tag]
@@ -143,5 +159,4 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.present(alert, animated: true, completion: nil)
     }
-
 }
